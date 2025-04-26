@@ -113,7 +113,7 @@ LightSource "point"
 #         "float radius" [ 2 ]
 # AttributeEnd
 
-# MR_Brain
+# 2. MR_Brain
 AttributeBegin
     Translate 0 1 0
     Scale 0.75 0.75 0.75

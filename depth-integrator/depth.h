@@ -1,3 +1,6 @@
+// Add depth.h and depth.cpp to pbrt-v3/src/integrators/
+// Then call CreateDepthIntegrator() function in the MakeIntegrator() method located in pbrt-v3/src/core/api.cpp
+
 #ifndef PBRT_INTEGRATORS_DEPTH_H
 #define PBRT_INTEGRATORS_DEPTH_H
 

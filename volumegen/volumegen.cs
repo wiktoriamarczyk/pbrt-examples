@@ -1,4 +1,6 @@
-﻿using System;
+﻿/* This program converts a stack of medical .tif images (e.g., CT or MRI scans) into volumetric data compatible with PBRT v4. It computes a 3D density grid by mapping the brightness of each pixel to a density value, applies intensity scaling and thresholding, and writes the result into a volume.pbrt file using a uniform grid representation for realistic volumetric rendering. */
+
+using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Globalization;
@@ -36,13 +38,8 @@ namespace volumegen
                 writer.WriteLine("    \"integer nz\" [{0}]", nz);
 
                 writer.WriteLine("    \"point3 p0\" [  -1.000000 -1.000000 -1.000000 ] \"point3 p1\" [ 1.000000 1.000000 1.000000 ]");
-                // writer.WriteLine("    \"point3 p0\" [ 0.0 0.0 0.0 ] \"point3 p1\" [ 1.000000 1.000000 1.000000 ]");
-
                 writer.WriteLine("    \"string type\" [ \"uniformgrid\" ]");
-
-                //writer.WriteLine("    \"spectrum sigma_a\" [200 .01 900 .01] \"spectrum sigma_s\" [200 10 900 10]");
                 writer.WriteLine("    \"spectrum sigma_a\" [300 20 830 20] \"spectrum sigma_s\" [300 160 830 160]");
-
                 writer.WriteLine("    \"float density\" [");
 
                 // Load images

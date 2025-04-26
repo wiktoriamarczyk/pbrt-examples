@@ -3,7 +3,8 @@ Transform [ 1 -0 -0 -0 -0 1 -0 -0 -0 -0 -1 -0 -0 -1 6.8 1]
 Sampler "halton" "integer pixelsamples"	[ 32 ]
 PixelFilter "triangle" "float xwidth" [ 1.000000 ] "float ywidth" [ 1.000000 ] 
 Film "image" "integer xresolution" [ 600 ] "integer yresolution" [ 600 ] "string filename" [ "scene.png" ] 
-Camera "perspective" "float fov" [ 19.500000 ] 
+Camera "perspective" "float fov" [ 19.500000 ]
+
 WorldBegin
 	MakeNamedMaterial "LeftWall" "string type" [ "matte" ] "rgb Kd" [ 0.630000 0.065000 0.050000 ] 
 	MakeNamedMaterial "RightWall" "string type" [ "matte" ] "rgb Kd" [ 0.140000 0.450000 0.091000 ] 
@@ -57,6 +58,4 @@ WorldBegin
 		Shape "plymesh" "string filename" "my_model.ply"
 	TransformEnd
 	
-
-
 WorldEnd

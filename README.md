@@ -15,3 +15,7 @@ A collection of scenes rendered using PBRT, showcasing volumetric and depth rend
 
 ## 24-bit depth map
 ![scene](https://github.com/user-attachments/assets/b8f93300-2f82-49f1-afb4-9b1a231bc57f)
+
+## Bonus - lego figure walking animation
+https://github.com/user-attachments/assets/4d7c2aef-3fe7-45b1-9e21-7f26bce948b4
+

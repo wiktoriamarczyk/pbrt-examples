@@ -8,10 +8,10 @@ A collection of scenes rendered using PBRT, showcasing volumetric and depth rend
 ![obraz](https://github.com/user-attachments/assets/b0b72f07-4ef0-46ce-8544-4a7c69f8c5a8)
 
 ## A hand-crafted Blender model rendered in a Cornell box using PBRT’s default integrator.
-![obraz](https://github.com/user-attachments/assets/2b461a13-05f7-471f-9a71-aff69426726d)
+![scene](https://github.com/user-attachments/assets/a79b2ef4-761e-4881-9020-ac298bfe4d45)
 
 ## The same Blender model rendered with a custom depth integrator implemented in PBRT.
-![obraz](https://github.com/user-attachments/assets/01c0138b-8055-4cab-b0af-8576881a38b6)
+![scene](https://github.com/user-attachments/assets/515ff1e4-fe3f-4f8d-ad42-7e8fd0e5031e)
 
 ## 24-bit depth map
-![obraz](https://github.com/user-attachments/assets/1caa3655-59e4-43bd-9e5e-3ee52f484e9f)
+![scene](https://github.com/user-attachments/assets/b8f93300-2f82-49f1-afb4-9b1a231bc57f)

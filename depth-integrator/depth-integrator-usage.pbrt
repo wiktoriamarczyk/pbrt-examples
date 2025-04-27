@@ -1,4 +1,4 @@
-Integrator "depth" "integer maxdepth" [ 8 ] "float mindistance" [ 6.0 ] "float maxdistance" [ 8.0 ]
+Integrator "depth" "integer maxdepth" [ 8 ] "float mindistance" [ 6.0 ] "float maxdistance" [ 8.0 ] "bool use24bit" "true"
 Transform [ 1 -0 -0 -0 -0 1 -0 -0 -0 -0 -1 -0 -0 -1 6.8 1]
 Sampler "halton" "integer pixelsamples"	[ 32 ]
 PixelFilter "triangle" "float xwidth" [ 1.000000 ] "float ywidth" [ 1.000000 ] 
@@ -40,12 +40,19 @@ WorldBegin
 		"point3 from" [ -0.75 0.3 0.4 ]
 		"rgb I" [ 0.5 0.5 1 ]
 		
+	# texture
+	Texture "myTexture" "spectrum" "imagemap" "string filename" "Material Base Color.png"
+
+	# material
+	MakeNamedMaterial "MyTexturedMaterial" "string type" ["matte"] "texture Kd" ["myTexture"]
+		
 	# my model 1
 	TransformBegin
 		Translate -0.35 0 -0.5
 		Rotate 270 1 0 0
-		Translate 0 0 0.5
-		Scale 0.5 0.5 0.5
+		Translate 0 0.25 0.8
+		Scale 0.25 0.25 0.25
+		NamedMaterial "MyTexturedMaterial"
 		Shape "plymesh" "string filename" "my_model.ply"
 	TransformEnd
 
@@ -53,8 +60,9 @@ WorldBegin
 	TransformBegin
 		Translate 0.35 0 0.55
 		Rotate 270 1 0 0
-		Translate 0 0 0.5
-		Scale 0.5 0.5 0.5
+		Translate 0 0.5 0.8
+		Scale 0.25 0.25 0.25
+		NamedMaterial "MyTexturedMaterial"
 		Shape "plymesh" "string filename" "my_model.ply"
 	TransformEnd
 	
